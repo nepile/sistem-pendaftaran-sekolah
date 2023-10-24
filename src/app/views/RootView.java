@@ -8,8 +8,7 @@ public class RootView {
      * Method to get data title from setTitle method
      */
     public static void getTitle() {
-        String path = "D:\\Java Journey\\sistem-pendaftaran-sekolah\\src\\app\\data\\title.txt";
-        RootController.setTitle(path);
+        RootController.setTitle();
     }
 
     /**
