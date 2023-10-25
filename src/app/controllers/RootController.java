@@ -1,20 +1,19 @@
 package app.controllers;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-import app.models.TitleModel;
-
-import java.io.FileNotFoundException;
+import app.services.LocalPath;
 
 public class RootController {
     /**
      * Method to setup title
      */
     public static void setTitle() {
-        TitleModel path = new TitleModel();
+        LocalPath path = new LocalPath();
+        File customizeTitle = new File(path.getPathTitle("title.txt"));
 
-        File customizeTitle = new File(path.data());
         try (Scanner readMyCustomizeTitle = new Scanner(customizeTitle)) {
             while (readMyCustomizeTitle.hasNextLine()) {
                 String title = readMyCustomizeTitle.nextLine();
