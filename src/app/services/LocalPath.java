@@ -20,6 +20,6 @@ public class LocalPath {
      * @return data method setPath()
      */
     public String getPath(String fileWithExt) {
-        return setPathTitle(fileWithExt);
+        return setPath(fileWithExt);
     }
 }
