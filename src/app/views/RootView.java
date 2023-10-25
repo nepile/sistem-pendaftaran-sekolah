@@ -1,6 +1,6 @@
 package app.views;
 
-import app.controllers.InputData;
+import app.services.InputData;
 import app.controllers.RootController;
 
 public class RootView {

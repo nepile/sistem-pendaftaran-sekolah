@@ -1,4 +1,4 @@
-package app.controllers;
+package app.services;
 
 import java.util.Scanner;
 

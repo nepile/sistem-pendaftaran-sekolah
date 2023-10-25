@@ -1,6 +1,7 @@
 package app.controllers;
 
 import app.models.UsersModel;
+import app.services.InputData;
 import app.views.RootView;
 
 public class LoginController {
