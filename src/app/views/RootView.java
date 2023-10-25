@@ -29,6 +29,7 @@ public class RootView {
                 // bring user to register view
             } else if (option.equals("2")) {
                 // bring user to login view
+                LoginView.showLoginView();
             } else if (option.equals("3")) {
                 // kick user from app
                 System.out.println("INFO: Exit from application...");
