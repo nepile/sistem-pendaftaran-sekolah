@@ -12,7 +12,7 @@ public class RootController {
      */
     public static void setTitle() {
         LocalPath path = new LocalPath();
-        File customizeTitle = new File(path.getPathTitle("title.txt"));
+        File customizeTitle = new File(path.getPath("title.txt"));
 
         try (Scanner readMyCustomizeTitle = new Scanner(customizeTitle)) {
             while (readMyCustomizeTitle.hasNextLine()) {
