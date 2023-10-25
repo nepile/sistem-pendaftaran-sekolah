@@ -8,7 +8,7 @@ public class UsersModel {
      * @return admin data of multidimensions array
      */
     public static String[][] staticDataByAdmin() {
-        String[][] admin = { { "Neville", "12345" }, { "Jeremy", "54321" } };
+        String[][] admin = { { "Neville", "Jeremy" }, { "12345", "54321" } };
         return admin;
     }
 
