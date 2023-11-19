@@ -2,14 +2,18 @@ package app.controllers;
 
 import app.models.UsersModel;
 import app.services.InputData;
-import app.views.RootView;
+import app.views.DashboardView;
+// import app.views.RootView;
 
 public class LoginController {
+
+    static boolean isNotLoggedIn = true;
+
     /**
      * Method to handle users request login
      */
     public static void handleLogin() {
-        while (true) {
+        while (session()) {
             UsersModel users = new UsersModel();
             String[][] data = users.data();
 
@@ -35,7 +39,8 @@ public class LoginController {
 
                 if (isUsernameExist) {
                     if (isPasswordCorrect) {
-                        RootView.showRootView();
+                        DashboardView.showDashboardView();
+                        isNotLoggedIn = false;
                     } else {
                         System.out.println("Password is invalid");
                     }
@@ -47,5 +52,14 @@ public class LoginController {
                 System.out.println("Invalid input!");
             }
         }
+
     }
+
+    /**
+     * Method to handle information about user if user didn't login
+     */
+    public static boolean session() {
+        return isNotLoggedIn;
+    }
+
 }

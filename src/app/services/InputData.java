@@ -11,9 +11,9 @@ public class InputData {
      */
     public static String input(String info) {
         System.out.print(info + " >> ");
-        try (Scanner userInput = new Scanner(System.in)) {
-            String data = userInput.nextLine();
-            return data;
-        }
+        Scanner userInput = new Scanner(System.in);
+        String data = userInput.nextLine();
+
+        return data;
     }
 }
