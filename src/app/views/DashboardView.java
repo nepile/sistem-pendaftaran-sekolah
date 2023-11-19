@@ -3,8 +3,11 @@ package app.views;
 import app.services.InputData;
 
 public class DashboardView {
+
+    static boolean decision = true;
+
     public static void showDashboardView() {
-        while (true) {
+        while (decision) {
             System.out.println("Dashboard Admin");
             System.out.println("1. Registration Pass Data");
             System.out.println("2. Registration Management");
@@ -16,9 +19,15 @@ public class DashboardView {
             } else if (option.equals("2")) {
                 System.out.println("Manajemen registrasi");
             } else if (option.equals("3")) {
-                RootView.showRootView();
+                System.out.println("==================================");
+                System.out.println("INFO: exit from dashboard admin");
+                System.out.println("==================================");
+                decision = false;
+                break;
             } else {
-                System.out.println("Input is invalid");
+                // invalid input
+                System.out.println("===========================");
+                System.out.println("ERROR: Invalid Input \n");
             }
         }
     }

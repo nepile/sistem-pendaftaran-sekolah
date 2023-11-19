@@ -4,6 +4,9 @@ import app.services.InputData;
 import app.controllers.RootController;
 
 public class RootView {
+
+    static boolean decision = true;
+
     /**
      * Method to get data title from setTitle method
      */
@@ -15,7 +18,7 @@ public class RootView {
      * Method to show the root view
      */
     public static void showRootView() {
-        while (true) {
+        while (decision) {
             getTitle();
 
             System.out.println("Select an options below: ");
@@ -31,8 +34,10 @@ public class RootView {
                 // bring user to login view
                 LoginView.showLoginView();
             } else if (option.equals("3")) {
-                // kick user from app
-                System.out.println("INFO: Exit from application...");
+                System.out.println("=============================");
+                System.out.println("INFO: exit from app");
+                System.out.println("=============================");
+                decision = false;
                 break;
             } else {
                 // invalid input
