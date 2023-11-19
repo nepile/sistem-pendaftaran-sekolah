@@ -8,6 +8,7 @@ public class DashboardView {
 
     public static void showDashboardView() {
         while (decision) {
+            System.out.println("----------------------------");
             System.out.println("Dashboard Admin");
             System.out.println("1. Registration Pass Data");
             System.out.println("2. Registration Management");
