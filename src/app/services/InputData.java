@@ -13,6 +13,7 @@ public class InputData {
         System.out.print(info + " >> ");
         Scanner userInput = new Scanner(System.in);
         String data = userInput.nextLine();
+        userInput.close();
 
         return data;
     }
