@@ -29,7 +29,7 @@ public class RootView {
             String option = InputData.input("Your Option");
 
             if (option.equals("1")) {
-                // bring user to register view
+                RegisterStudentView.bioDataSiswaView();
             } else if (option.equals("2")) {
                 // bring user to login view
                 LoginView.showLoginView();
