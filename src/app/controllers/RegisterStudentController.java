@@ -26,7 +26,7 @@ public class RegisterStudentController {
         System.out.println("-MASUKKAN NILAI-");
         String matematika = InputData.input("Matematika");
         String ipa = InputData.input("Ilmu Pengetahuan Alam");
-        String ips = InputData.input("Ilmu Pengetahuan Alam");
+        String ips = InputData.input("Ilmu Pengetahuan Sosial");
         String inggris = InputData.input("Bahasa Inggris");
         String indonesia = InputData.input("Bahasa Indonesia");
         double rerata = (Integer.parseInt(matematika) + Integer.parseInt(ipa) + Integer.parseInt(ips)
