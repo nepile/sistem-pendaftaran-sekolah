@@ -1,5 +1,6 @@
 package app.views;
 
+import app.controllers.DashboardController;
 import app.services.InputData;
 
 public class DashboardView {
@@ -19,6 +20,9 @@ public class DashboardView {
                 System.out.println("Kelulusan siswa");
             } else if (option.equals("2")) {
                 System.out.println("Manajemen registrasi");
+                String kuota = InputData.input("Tentukan kuota penerimaan siswa");
+                DashboardController.kuotaSiswa(Integer.parseInt(kuota));
+                System.out.println("Anda memasukan kuota sebanyak : "+ kuota);
             } else if (option.equals("3")) {
                 System.out.println("==================================");
                 System.out.println("INFO: exit from dashboard admin");
