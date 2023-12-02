@@ -9,7 +9,7 @@ public class LocalPath {
      * @return path
      */
     public static String setPath(String pathFile) {
-        String path = "D:\\Java Journey\\sistem-pendaftaran-sekolah\\src\\app\\data\\" + pathFile;
+        String path = "C:\\sistem-pendaftaran-sekolah\\src\\app\\data\\" + pathFile;
         return path;
     }
 
