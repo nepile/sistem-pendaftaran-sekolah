@@ -32,9 +32,13 @@ public class RegisterStudentController {
         double rerata = (Integer.parseInt(matematika) + Integer.parseInt(ipa) + Integer.parseInt(ips)
                 + Integer.parseInt(inggris) + Integer.parseInt(indonesia)) / 5;
         if (rerata>=80) {
-            lulus=true;
+            lulus = true;
+            System.out.println();
+            System.out.println("Selamat anda lulus.");
         } else {
             lulus = false;
+            System.out.println();
+            System.out.println("Anda telah gagal silahkan coba lagi");
         }
     }
 
@@ -119,8 +123,12 @@ public class RegisterStudentController {
         boolean lulus;
         if (bobot>=80) {
             lulus = true;
+            System.out.println();
+            System.out.println("Selamat anda telah lolos");
         } else {
             lulus = false;
+            System.out.println();
+            System.out.println("Anda gagal silahkan coba lagi");
         }
     }
 }
