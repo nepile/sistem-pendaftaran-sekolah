@@ -24,7 +24,7 @@ public class RootView {
             System.out.println("Select an options below: ");
             System.out.println("1. Register as student");
             System.out.println("2. Login");
-            System.out.println("3. Exit from app");
+            System.out.println("0. Exit from app");
 
             String option = InputData.input("Your Option");
 
@@ -33,10 +33,9 @@ public class RootView {
             } else if (option.equals("2")) {
                 // bring user to login view
                 LoginView.showLoginView();
-            } else if (option.equals("3")) {
+            } else if (option.equals("0")) {
                 System.out.println("=============================");
                 System.out.println("INFO: exit from app");
-                System.out.println("=============================");
                 decision = false;
                 break;
             } else {

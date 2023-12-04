@@ -7,7 +7,7 @@ public class LoginView {
      * Method to show login view
      */
     public static void showLoginView() {
-        System.out.println("---------- Please Login ----------");
+        System.out.println("-------------- Please Login --------------");
         LoginController.handleLogin();
     }
 }

@@ -3,13 +3,30 @@ package app.models;
 import app.services.InputData;
 
 public class StudentModel {
+
+    static String nama;
+    static String nisn;
+
     public static void informasiPribadi() {
-        String nama = InputData.input("Nama Lengkap");
-        String tempatLahir = InputData.input("Tempat Lahir");
-        String tanggalahir = InputData.input("Tanggal Lahir");
-        String bulanLahir = InputData.input("Bulan Lahir");
-        String TahunLhr = InputData.input("Tahun Lahir : ");
-        String jenisKelamin = InputData.input("Jenis Kelamin (Pria / Wanita)");
-        String NISN = InputData.input("Nomor Induk Siswa Nasional (NISN)");
+        setNamaAttribute();
+        setNisnAttribute();
+
+    }
+
+    public static void setNamaAttribute() {
+        nama = InputData.input("Nama Lengkap");
+    }
+
+    public static void setNisnAttribute() {
+        nisn = InputData.input("NISN");
+
+    }
+
+    public static String getNamaAttribute() {
+        return nama;
+    }
+
+    public static String getNisnAttribute() {
+        return nisn;
     }
 }
